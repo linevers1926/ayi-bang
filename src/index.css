@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar hiding */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom styles */
+body {
+  @apply text-gray-900 bg-gray-50;
+}
+
+/* Smooth transitions */
+button {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+/* Active states */
+button:active {
+  @apply transform scale-95;
+}
